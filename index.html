@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Direct Flowchart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .flowchart-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .flowchart-title {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .process-flow {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .process-box {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            width: 180px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .arrow {
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            transform: rotate(45deg);
+            display: inline-block;
+            background-color: #4CAF50;
+        }
+
+        .arrow-right {
+            transform: rotate(45deg);
+        }
+
+        .arrow-down {
+            transform: rotate(-135deg);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .process-flow {
+                flex-direction: column;
+            }
+
+            .process-box {
+                width: 100%;
+                margin: 8px 0;
+            }
+
+            .arrow-right, .arrow-down {
+                margin: 5px 0;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .process-box {
+                width: 250px;
+            }
+
+            .arrow-right, .arrow-down {
+                margin: 10px 5px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flowchart-title">Laundry Direct</div>
+
+    <!-- Buyer Process Flow -->
+    <div class="flowchart-container">
+        <div class="section-title">Buyer Process Flow</div>
+        <div class="process-flow">
+            <div class="process-box">Buyer Sign Up</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">Confirmation Email</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">Verification</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">Profile Setup</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">Add Products to Cart</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">Choose Pickup/Delivery</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">Checkout</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">Payment (Wallet/Card/Bank)</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">Bank Payment (Await Confirmation)</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">Order Completed</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">View Order History</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">Lodge Complaint</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">Contact Support</div>
+        </div>
+    </div>
+
+    <!-- Buyer Wallet Workflow -->
+    <div class="flowchart-container">
+        <div class="section-title">Buyer Wallet Workflow</div>
+        <div class="process-flow">
+            <div class="process-box">Wallet Setup</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">Fund Wallet (Bank/Card)</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">View Wallet Balance</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">View Transaction History</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">Use Wallet to Pay</div>
+        </div>
+    </div>
+
+    <!-- Admin Process Flow -->
+    <div class="flowchart-container">
+        <div class="section-title">Admin Process Flow</div>
+        <div class="process-flow">
+            <div class="process-box">Create Categories & Products</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">View Orders</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">Mark Order Success/Resolve Complaint</div>
+            <div class="arrow arrow-right"></div>
+            <div class="process-box">Initiate Delivery</div>
+        </div>
+    </div>
+
+</body>
+</html>
